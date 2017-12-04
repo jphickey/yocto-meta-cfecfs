@@ -3,6 +3,9 @@
 # Add some extra space in the image so there is room for CFE/CFS
 IMAGE_ROOTFS_EXTRA_SPACE_append = " + 65536"
 
+# install the kernel modules
+IMAGE_INSTALL += "kernel-modules"
+
 # Time synchronization - this adds dependency to oe "networking" layer
 IMAGE_INSTALL += "ntp"
 
